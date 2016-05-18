@@ -35,7 +35,8 @@ export default React.createClass({
             } 
         }
         
-        fetchWeatherData.getWSdata("http://arakno.net/proxy.php?url=" + encodeURIComponent('http://wxdata.weather.com/wxdata/weather/local/UKXX0085?cc=*&unit=m&dayf=4'))
+        //fetchWeatherData.getWSdata("http://yourserver.net/proxy.php?url=" + encodeURIComponent('http://wxdata.weather.com/wxdata/weather/local/UKXX0085?cc=*&unit=m&dayf=4'))
+        fetchWeatherData.getWSdata("http://wxdata.weather.com/wxdata/weather/local/UKXX0085?cc=*&unit=m&dayf=4")
             .then(function (res) {
 
                 var parser = new DOMParser();
